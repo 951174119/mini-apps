@@ -1,0 +1,34 @@
+<!--pages/classify/classify.wxml-->
+<!--生鲜-->
+
+<view class="friuts">
+      <view class="classifytitle">{{goodclassify[0]}}</view>
+      <view class="goodclassifyimg">
+            <image class="classifyimg" src="/images/UI/dining-table-header.jpg"></image>
+      </view>
+      <view class="goods">
+          <view class="gooditem" wx:for="{{friut}}">
+              <view class="goodview">
+                  <image class="goodimg" src="{{item.pic}}"></image>
+              </view>
+              <view class="goodprice">{{item.price}}</view>
+              <view class="goodtext">{{item.name}}</view>
+          </view>
+      </view>
+</view>
+<!--粮油-->
+<view class="grain ">
+      <view class="classifytitle">{{goodclassify[1]}}</view>
+      <view class="goodclassifyimg">
+            <image class="classifyimg" src="/images/UI/grain-dry-cargo-header.jpg"></image>
+      </view>
+      <view class="goods">
+          <view class="gooditem" wx:for="{{grain}}">
+              <view class="goodview">
+                  <image class="goodimg" src="{{item.pic}}"></image>
+              </view>
+              <view class="goodprice">{{item.price}}</view>
+              <view class="goodtext">{{item.name}}</view>
+          </view>
+      </view>
+</view>

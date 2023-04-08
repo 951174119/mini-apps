@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" circular="{{circular}}">
+    <block wx:for="{{imgUrl}}">
+<!--轮播图-->
+      <swiper-item>
+        <image bindload="cusImageLoad" src="{{item}}" class="slide-image" style="width:{{imageWidth}};height:{{imageHeight}}"></image>
+      </swiper-item>
+    </block>
+  </swiper> 
+</view>
+<view class="headline">
+    <view class="headline-img"><image class="headimg" src="/images/UI/2.png"></image></view>
+    <view class="headline-text">师大小商城</view>
+</view>

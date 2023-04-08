@@ -1,0 +1,24 @@
+<!--pages/gouwuche/gouwuche.wxml-->
+<view class="cart-list" >
+    <view class="content" wx:for="{{goods}}" id="{{index}}" data-dish="{{item.id}}" style="display:flex;flex-direction:row">
+        <view style="width:10%" catchtap="selectState" id="{{index}}"><icon  color="#FF6537" style="margin-top:33px;"></icon></view>
+        <view style="width:35%"><image src="{{item.imgUrl}}" style="width:90px;height:88px;border:1px solid #ccc"></image></view>
+        <view style="display:flex;flex-direction:column;width:55%">
+           <view class="goods-text" >
+               <text class="goods-name">{{item.name}}</text>
+           </view>
+           <view class="goods-info">{{item.pz}}</view>
+      <view style="display:flex;flex-direction:row;justify-content: space-between;">
+                <view class="" style="display:flex;flex-direction:row;border:1px solid #ccc;margin-top:16px;width:70%">
+                  <view class="des" data-index = "{{index}}" bindtap = "itemCountSub">-</view>
+              <view class="numInput">
+                {{item.count}}
+              </view>
+              <view class="add" data-index = "{{index}}"  bindtap = "itemCountAdd">+</view>
+                </view>
+                <view class="remove" ><image src="{{item.delImg}}" style="width:28px;height:32px;"></image></view>
+           </view> 
+        </view>
+    </view>
+</view>
+<loading hidden="{{hiddening}}">加载中..</loading>

@@ -1,0 +1,54 @@
+/* pages/wode/wode.wxss */
+.user-box{
+  background:#fa6400;
+  padding: 15px 0 0 0;
+
+}
+.service{
+  background: #fa6400;
+  color:#fff;
+  padding: 12px 0;
+  text-align: center;
+}
+.user-info{
+  background: transparent;
+  color:rgb(43, 29, 231);
+  font-size: 14px;
+  padding: 10px 0;
+  text-align: center;
+}
+.wait-pay{
+  flex: 1;
+  border-right: 1px solid #fff;
+  background: #ff6537;
+  font-size: 14px;
+}
+.custom-service{
+  flex:1;
+  font-size: 14px;
+  background: #ff6537;
+}
+.user-operation{
+  margin-top: 20px;
+  min-height: 250px;
+  background: #f5f5f5;
+}
+.blank{
+  margin-top: 20px;
+}
+
+.service-content:first-child{
+  margin-top:20px;
+}
+
+.service-img{
+  width:20px;
+  height:20px;
+  margin-right:10px;
+}
+.tips{
+  text-align: center;
+  font-size: 12px;
+  color:#878787;
+  background:#f5f5f5;
+}
